@@ -1,0 +1,28 @@
+/home/gaf/4l2/learn4haskell$ make test-chapter1         
+cabal test doctest-chapter1 --enable-tests --test-show-details=direct
+Resolving dependencies...
+cabal: Could not resolve dependencies:
+[__0] trying: learn4haskell-0.0.0.0 (user goal)
+[__1] next goal: base (dependency of learn4haskell)
+[__1] rejecting: base-4.15.1.0/installed-4.15.1.0 (conflict: learn4haskell =>
+base^>=4.14.0.0)
+[__1] skipping: base-4.16.1.0, base-4.16.0.0, base-4.15.1.0, base-4.15.0.0
+(has the same characteristics that caused the previous version to fail:
+excluded by constraint '^>=4.14.0.0' from 'learn4haskell')
+[__1] rejecting: base-4.14.3.0, base-4.14.2.0, base-4.14.1.0, base-4.14.0.0,
+base-4.13.0.0, base-4.12.0.0, base-4.11.1.0, base-4.11.0.0, base-4.10.1.0,
+base-4.10.0.0, base-4.9.1.0, base-4.9.0.0, base-4.8.2.0, base-4.8.1.0,
+base-4.8.0.0, base-4.7.0.2, base-4.7.0.1, base-4.7.0.0, base-4.6.0.1,
+base-4.6.0.0, base-4.5.1.0, base-4.5.0.0, base-4.4.1.0, base-4.4.0.0,
+base-4.3.1.0, base-4.3.0.0, base-4.2.0.2, base-4.2.0.1, base-4.2.0.0,
+base-4.1.0.0, base-4.0.0.0, base-3.0.3.2, base-3.0.3.1 (constraint from
+non-upgradeable package requires installed instance)
+[__1] fail (backjumping, conflict set: base, learn4haskell)
+After searching the rest of the dependency tree exhaustively, these were the
+goals I've had most trouble fulfilling: base, learn4haskell
+
+make: *** [Makefile:11: test-chapter1] Error 1
+/home/gaf/4l2/learn4haskell$ 
+
+
+MOVING ON TO CHAPTER 2 anyways, because it passes my make file (nonexist)
